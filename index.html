@@ -12,9 +12,15 @@
     <link rel="stylesheet" href="css/leaflet/leaflet.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 <body>
+<!--------------------------------------LOADER--------------------------------------------------------->
+<div class="loader-wrapper">
+    <div class="lds-facebook"><div></div><div></div><div></div></div>
+</div>
+
 <!--------------------------------------------MOBILNI MENU-------------------------------------------->
     
     <div id="mobile-menu">
@@ -48,13 +54,15 @@
 
 <!--------------------------------------------HEADER SEKCIJA-------------------------------------------->
 
-        <header id="header" class="p-3" id="header">
+        <header id="header" class="p-3">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4">
-                        <img id="header-logo" src="svg/header-logo.svg" alt="coffe shop header logo">
+                    <div class="col-4" data-animation="animate__slideInLeft" data-animation-delay="0.3">
+                        <a href="">
+                            <img id="header-logo" src="svg/header-logo.svg" alt="coffe shop header logo">
+                        </a>
                     </div>
-                    <div class="d-none d-md-block col-8 text-right">
+                    <div class="d-none d-md-block col-8 text-right" data-animation="animate__slideInRight" data-animation-delay="0.3">
                         <a class="text-decoration-none text-uppercase" href="#intro-section">about</a>
                         <a class="text-decoration-none text-uppercase" href="#menu-section">products</a>
                         <a class="text-decoration-none text-uppercase" href="#contact-info-section">contact</a>
@@ -74,14 +82,14 @@
         <section id="hero-section" class="text-light">
         <div class="container-fluid">
             <div class="row vh-100 align-items-center pb-5">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-animation="animate__zoomIn" data-animation-delay="0.5">
                     <img id="hero-logo" src="svg/logo.svg" alt="coffe shop logo">
                     <h1 class="display-2 font-weight-bold">THE HOME OF COFFEE</h1>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a leo id lacus gravida semper at eu lacus.</p>
                 </div>
             </div>
         </div>
-        <a id="arrow-down" href="#intro-section">
+        <a id="arrow-down" href="#intro-section" data-animation="animate__fadeIn" data-animation-delay="1.5">
 
             <span class="fa-stack fa-2x fa-bounce">
                 <i class="fa-regular fa-circle fa-stack-2x"></i>
@@ -94,10 +102,10 @@
 <!------------------------------------------INTRO SEKCIJA-------------------------------------------->
 
     <section id="intro-section" class="py-5">
-        <div class="container py-5">
+        <div class="container py-5" data-animation="animate__zoomIn" data-animation-delay="0.5">
             <div class="row">
                 <div class="col-6 offset-3 text-center py-5">
-                    <h1 class="font-weight-bold">THE BEST COFFEE SHOP</h1>
+                    <h1 class="font-weight-bold" >THE BEST COFFEE SHOP</h1>
                     <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
                 </div>
             </div>
@@ -123,7 +131,7 @@
     <section id="about-section">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
-                <div class="col-12 col-md-5 offset-md-1 p-5 align-self-center">
+                <div class="col-12 col-md-5 offset-md-1 p-5 align-self-center" data-animation="animate__fadeInLeft" data-animation-delay="0.4">
                     <h2>GREAT PLACE</h2>
                     <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     </p>
@@ -136,7 +144,7 @@
                 <div class="col-6">
 
                 </div>
-                <div class="col-md-6 p-5 text-light ">
+                <div class="col-md-6 p-5 text-light" data-animation="animate__fadeInLeft" data-animation-delay="0.6">
                     <h2>FRESH BEANS</h2>
                     <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                     </p>
@@ -152,14 +160,14 @@
     <section id="menu-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center py-5">
+                <div class="col-12 text-center py-5" data-animation="animate__fadeInUp" data-animation-delay="0.3">
                     <h1 class="font-weight-bold">SELECTION FROM OUR MENU</h1>
                     <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
 
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeInLeft" data-animation-delay="0.4">
                     <img class="img-fluid" src="img/coffee-item-1.png" alt="coffe shop logo">
                     <h2 class="my-3">BLACK CAKE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
@@ -168,14 +176,14 @@
 
 
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeIn" data-animation-delay="0.8">
                     <img class="img-fluid" src="img/coffee-item-2.png" alt="coffe shop logo">
                     <h2 class="my-3">BLACK COFFEE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">6€</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeInRight" data-animation-delay="0.4">
                     <img class="img-fluid" src="img/coffee-item-3.png" alt="coffe shop logo">
                     <h2 class="my-3">ESPRESSO</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
@@ -184,7 +192,7 @@
                 </div>
 
 
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeInLeft" data-animation-delay="0.4">
                     <img class="img-fluid" src="img/coffee-item-4.png" alt="coffe shop logo">
                     <h2 class="my-3">LATTE</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
@@ -192,14 +200,14 @@
                     <p class="h3">6€</p>
 
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeIn" data-animation-delay="0.8">
                     <img class="img-fluid" src="img/coffee-item-5.png" alt="coffe shop logo">
                     <h2 class="my-3">MACARONS</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                     </p>
                     <p class="h3">3€</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center card-hover">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-animation="animate__fadeInRight" data-animation-delay="0.4">
                     <img class="img-fluid" src="img/coffee-item-6.png" alt="coffe shop logo">
                     <h2 class="my-3">MACCHIATO</h2>
                     <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
@@ -254,7 +262,10 @@
     <div class="container-fluid text-light py-3">
         <div class="row">
             <div class="col-md-5 offset-md-1 align-self-center">
-                Coffee Shop | © 2023 All rights reserved
+                <a id="footer-link" href="#hero-section">
+                    Coffee Shop 
+                </a>
+                | © 2023 All rights reserved
             </div>
             <div class="col-md-5 text-right" id="social-icons">
                 <a href="#"><i id="fb-icon" class="fa-brands fa-square-facebook"></i></a>
@@ -269,6 +280,7 @@
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/leaflet.js"></script>
+    <script src="js/animate.js"></script>
 
 
     <script>
@@ -340,7 +352,18 @@
 
             //-----------------jQuery alternativa za otvaranje zatvaranje menija---------------------------------
 
-           $("#menu-btn, #close-btn").click(function(){
+            /*jQuery(document).ready(function($){
+
+                //=================Loader==================//
+                setTimeout(function () {
+                    $(".loader-wrapper").fadeOut();
+                }, 3000);
+
+            });*/
+
+
+            //jQuery kod za menu dugme
+            $("#menu-btn, #close-btn").click(function(){
                 $("#mobile-menu").toggle();
             });
 
@@ -391,6 +414,10 @@
             marker.bindTooltip("We are here!");
 
         });
+
+
+
+
 
 
     </script>

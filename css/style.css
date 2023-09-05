@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
 }
@@ -36,7 +40,7 @@ header a:visited {
 
 .solid-header {
     position: fixed;
-    background-color: #c69572;
+    background-color: #bc8f62;
     transition: background-color 0.5s ease;
 }
 
@@ -66,7 +70,7 @@ header a:visited {
 
 #arrow-down {
     position: absolute;
-    bottom: 64px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -96,7 +100,7 @@ header a:visited {
 }
 
 .intro-icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 /************************************************ABOUT SECTION*********************************************/
 
@@ -120,6 +124,10 @@ header a:visited {
     position: relative;
 }
 
+.btn {
+    background-color: #bc8f62;
+    border-color: transparent;
+}
 
 @media (max-width: 768px) {
     #about-bg-2::before {
@@ -140,9 +148,10 @@ header a:visited {
     background: #eae7de;
 }
 
-.card-hover:hover {
+/*sada je iskljucen hover za menu slike (slike kafa i kolaca)
+/*.card-hover:hover {
     transform: scale(1.1);
-}
+}*/
 
 
 /************************************************CONTACT SECTION*********************************************/
@@ -177,6 +186,14 @@ footer {
 footer a i {
     font-size: 32px;
     color: white;
+}
+
+#footer-link {
+    color: white;
+}
+
+#footer-link:hover {
+    color:#bc8f62;
 }
 
 /*hover ikonice*/
@@ -241,3 +258,61 @@ footer a i {
     top: 12px;
     width: 36px; 
 }
+
+/***********************************************LOADER******************************************************************/
+
+/*.loader-wrapper {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 5;
+    padding-top: 20%;
+}
+
+
+
+.lds-facebook {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }*/
